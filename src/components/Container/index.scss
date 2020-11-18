@@ -1,0 +1,22 @@
+@import '~/App.scss';
+
+.container {
+  background-color: #FFFFFF;
+  width: 450px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.45);
+  max-height: 650px;
+  overflow-y: scroll;
+  margin-top: -180px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $active-tab-color;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,17 @@
+@import '~/App.scss';
+
+.wrapperTracker {
+  .rows {
+    @include display(rows, space-between);
+  }
+
+  .buttons {
+    @include display();
+
+    .button {
+      margin-left: 15px;
+      background-color: white !important;
+      color: black !important;
+    }
+  }
+}

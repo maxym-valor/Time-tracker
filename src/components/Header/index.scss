@@ -1,0 +1,26 @@
+@import '~/App.scss';
+
+.tabs {
+  @include display();
+  padding: 30px;
+
+  .tab {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: bold;
+    font-size: 20px;
+    
+    &:hover {
+      color: $active-tab-color;
+    }
+
+    &:last-child {
+      margin-left: 50px;
+    }
+  }
+
+  .activeTab {
+    color: $active-tab-color;
+  }
+}
