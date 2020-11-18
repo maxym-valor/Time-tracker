@@ -52,7 +52,7 @@ const PostDetail = () => {
 
       return [
         { title: 'Project name:', value: name },
-        { title: 'Time:', value: moment(id).format('h:mm:ss') },
+        { title: 'Time:', value: moment(time).format('h:mm:ss') },
         { title: 'Description:', value: description },
         { title: 'Created:', value: moment(id).format('MMMM Do YYYY, h:mm:ss a') },
       ]
