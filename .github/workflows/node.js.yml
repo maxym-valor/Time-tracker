@@ -7,9 +7,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          script: npm start
+          start: npm start
           spec: cypress/integration/basic-way.js
