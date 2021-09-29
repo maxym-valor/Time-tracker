@@ -1,4 +1,4 @@
-name: Cypress tests
+name: Cypress tests on Ubuntu
 on: [push]
 jobs:
   cypress-run:
@@ -14,12 +14,13 @@ jobs:
           wait-on: 'http://localhost:3000'
           browser: chrome
           spec: cypress/integration/*.js
-name: Cypress tests
+
+name: Cypress tests on Mac
 on: [push]
 jobs:
   cypress-run:
     name: Cypress run
-    runs-on: macos-11
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -28,5 +29,5 @@ jobs:
         with:
           start: npm start
           wait-on: 'http://localhost:3000'
-          browser: firefox
+          browser: chrome
           spec: cypress/integration/*.js
