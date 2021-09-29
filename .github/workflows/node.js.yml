@@ -3,7 +3,7 @@ on: [push]
 jobs:
   cypress-run:
     name: Cypress run
-    runs-on: ubuntu-20.04
+    runs-on: macos-11
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -12,22 +12,5 @@ jobs:
         with:
           start: npm start
           wait-on: 'http://localhost:3000'
-          browser: chrome
-          spec: cypress/integration/*.js
-
-name: Cypress tests on Mac
-on: [push]
-jobs:
-  cypress-run:
-    name: Cypress run
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-          start: npm start
-          wait-on: 'http://localhost:3000'
-          browser: chrome
+          browser: edge
           spec: cypress/integration/*.js
