@@ -1,4 +1,4 @@
-name: Cypress tests
+name: Cypress tests on Ubuntu
 on: [push]
 jobs:
   cypress-run:
@@ -12,5 +12,5 @@ jobs:
         with:
           start: npm start
           wait-on: 'http://localhost:3000'
-          browser: chrome
+          browser: firefox
           spec: cypress/integration/*.js

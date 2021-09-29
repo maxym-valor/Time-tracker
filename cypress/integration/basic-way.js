@@ -1,5 +1,5 @@
 describe('My First Test', () => {
-    it('Does not do much!', () => {
+    it('should check basic way', () => {
         cy.visit('http://localhost:3000/#/');
         cy.get('#name').type('Maxym');
         cy.get('.ant-select-selection-search-input').click();
