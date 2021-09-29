@@ -12,5 +12,5 @@ jobs:
         with:
           start: npm start
           wait-on: 'http://localhost:3000'
-          browser: edge
+          browser: firefox
           spec: cypress/integration/*.js
