@@ -11,4 +11,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm start
-          spec: cypress/integration/basic-way.js
+          spec: cypress/integration/*.js
